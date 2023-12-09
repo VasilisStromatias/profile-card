@@ -1,10 +1,11 @@
 import React from "react";
 
-function Skill({ name, icon, bg }) {
+function Skill({ name, level , bg}) {
+  console.log(name, level)
   return (
-    <li className="skill" style={{ backgroundColor: bg }}>
+    <li className={`skill ${level}`} style={{ backgroundColor: bg }}>
       {name}
-      {icon}
+      {level === "expert" ? "💪" : "👶"}
     </li>
   );
 }

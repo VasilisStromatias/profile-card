@@ -1,7 +1,5 @@
 import React from "react";
 
-import "../../";
-
 import avatarImage from "../../assets/avatar-image.jpg";
 
 function Avatar() {

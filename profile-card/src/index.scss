@@ -6,3 +6,48 @@
   margin: 0;
   padding: 0;
 }
+#root{
+  padding: 40px;
+}
+
+.card{
+  border: 3px solid #000;
+  max-width: 400px;
+}
+
+.avatar-image{
+  max-height: 250px;
+  overflow: hidden;
+  & img{
+    max-width: 100%;
+    display: block;
+    margin: auto;
+    object-fit: contain;
+    object-position: 0 -20px;
+  }
+}
+
+.data{
+  padding: 40px;
+  & .info{
+    margin-bottom: 25px;
+    & h1{
+      margin-bottom: 20px;
+    }
+  }
+  & .skills{
+    & .skills-list{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      & .skill{
+        padding: 5px 10px;
+        border-radius: 6px;
+        font-weight: 600;
+      }
+    }
+  }
+}
